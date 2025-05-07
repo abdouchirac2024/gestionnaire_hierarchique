@@ -82,3 +82,145 @@ table td .btn-group .btn:last-child, table td .btn:last-child {
 .bg-primary {
     background-color: #0a1931 !important;
 }
+
+/* Améliorations Responsive */
+@media (max-width: 768px) {
+    /* Ajustements pour les tableaux */
+    .table-responsive {
+        margin: 0 -15px;
+        border: none;
+    }
+    
+    .table td, .table th {
+        white-space: nowrap;
+        padding: 0.5rem;
+    }
+
+    /* Ajustements pour les boutons dans les tableaux */
+    .table td .btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    /* Ajustements pour les modales */
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+
+    .modal-body {
+        padding: 1rem;
+    }
+
+    /* Ajustements pour les en-têtes */
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .navbar-text {
+        font-size: 0.9rem;
+    }
+
+    /* Ajustements pour les formulaires */
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    /* Ajustements pour les titres */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Améliorations pour les très petits écrans */
+@media (max-width: 576px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .table td .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    .table td .btn:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Ajustement des marges pour les boutons d'action */
+    .d-flex.justify-content-between {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .d-flex.justify-content-between .btn {
+        width: 100%;
+    }
+
+    /* Ajustement des toasts pour les petits écrans */
+    #toastContainer {
+        right: 10px;
+        left: 10px;
+        min-width: auto;
+    }
+}
+
+/* Améliorations pour les écrans moyens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .modal-dialog.modal-lg {
+        max-width: 90%;
+    }
+}
+
+/* Améliorations générales pour tous les écrans */
+.table-responsive {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Amélioration de la lisibilité des tableaux */
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0,0,0,0.02);
+}
+
+/* Amélioration des formulaires */
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(10, 25, 49, 0.25);
+    border-color: #0a1931;
+}
+
+/* Amélioration des modales */
+.modal-header {
+    border-bottom: 2px solid #0a1931;
+}
+
+.modal-footer {
+    border-top: 2px solid #0a1931;
+}
